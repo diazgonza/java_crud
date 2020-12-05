@@ -107,7 +107,7 @@ public class Controlador implements ActionListener, MouseListener {
             v.model.removeRow(0);
         }
         
-        ArrayList lista = dao.read();
+        ArrayList<Producto> lista = dao.read();
         for(Producto p: lista){
            Object item[] = new Object [5];
            item [0] = p.getIdproducto();
